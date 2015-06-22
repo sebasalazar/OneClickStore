@@ -31,4 +31,36 @@
             <to-view-id>/pages/formulario.jsf</to-view-id>
         </navigation-case>
     </navigation-rule>
+    
+    <!-- Converters -->
+    <converter id="BaseBeanConverter">
+        <converter-id>BaseBeanConverter</converter-id>
+        <converter-class>cl.sebastian.oneclickstore.portal.converter.BaseBeanConverter</converter-class>
+    </converter>
+    
+    <converter id="FechaCompletaConverter">
+        <converter-id>FechaCompletaConverter</converter-id>
+        <converter-class>cl.sebastian.oneclickstore.portal.converter.FechaCompletaConverter</converter-class>
+    </converter>
+    
+    <converter id="FechaConverter">
+        <converter-id>FechaConverter</converter-id>
+        <converter-class>cl.sebastian.oneclickstore.portal.converter.FechaConverter</converter-class>
+    </converter>
+    
+    <converter id="RutConverter">
+        <converter-id>RutConverter</converter-id>
+        <converter-class>cl.sebastian.oneclickstore.portal.converter.FechaConverter</converter-class>
+    </converter>
+    
+    <converter id="SiNoConverter">
+        <converter-id>SiNoConverter</converter-id>
+        <converter-class>cl.sebastian.oneclickstore.portal.converter.SiNoConverter</converter-class>
+    </converter>
+    
+    <converter id="TrimConverter">
+        <converter-id>TrimConverter</converter-id>
+        <converter-class>cl.sebastian.oneclickstore.portal.converter.TrimConverter</converter-class>
+    </converter>
+
 </faces-config>

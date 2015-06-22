@@ -7,12 +7,10 @@ import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.ConverterException;
-import javax.faces.convert.FacesConverter;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@FacesConverter(value = "RutConverter")
 public class RutConverter implements Converter, Serializable {
 
     public final static String DEFAULT_RUT_PATTERN = "##.###.###-X";

@@ -4,10 +4,8 @@ import java.io.Serializable;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
-import javax.faces.convert.FacesConverter;
 import org.apache.commons.lang3.StringUtils;
 
-@FacesConverter(value = "TrimConverter")
 public class TrimConverter implements Converter, Serializable {
 
     @Override

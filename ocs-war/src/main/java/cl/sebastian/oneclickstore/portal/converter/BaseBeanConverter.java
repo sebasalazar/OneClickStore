@@ -4,7 +4,6 @@ import java.io.Serializable;
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
-import javax.faces.convert.FacesConverter;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.lang3.SerializationUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -15,7 +14,6 @@ import org.slf4j.LoggerFactory;
  *
  * @author Sebastián Salazar Molina <ssalazar@orangepeople.cl>
  */
-@FacesConverter(value = "BaseBeanConverter")
 public class BaseBeanConverter implements Converter, Serializable {
 
     private static final Logger logger = LoggerFactory.getLogger(BaseBeanConverter.class);
