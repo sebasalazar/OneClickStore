@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <ui:composition template="/templates/main.xhtml">
+        <ui:define name="contenido">
+
+            <p:outputPanel rendered="#{exitoBean.mostrar}">
+                <p:panel header="${msg.exito}">
+                    <h:outputText value="${msg.mensajeExito}" />
+                </p:panel>
+            </p:outputPanel>
+            
+            <p:messages globalOnly="true" showDetail="false" showSummary="true" />
+            
+        </ui:define>
+    </ui:composition>
+</html>

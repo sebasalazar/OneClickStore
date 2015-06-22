@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-application>
+    <!--
+    <xml>
+        <parser-factory>
+            <saxparser-factory>
+                org.apache.xerces.jaxp.SAXParserFactoryImpl
+            </saxparser-factory>
+            <document-builder-factory>
+                org.apache.xerces.jaxp.DocumentBuilderFactoryImpl
+            </document-builder-factory>
+            <transformer-factory>
+                org.apache.xalan.processor.TransformerFactoryImpl
+            </transformer-factory>
+        </parser-factory>
+    </xml>
+    -->
+    <application-param>
+        <param-name>webapp.encoding.default</param-name>
+        <param-value>UTF-8</param-value>
+    </application-param>
+
+
+    <prefer-application-packages>
+        <package-name>com.ctc.wstx.*</package-name>
+        <!--        
+        <package-name>javax.jws.*</package-name>
+        <package-name>javax.xml.ws.*</package-name>
+        <package-name>org.apache.*</package-name>
+        -->
+        <package-name>antlr.*</package-name>
+        <package-name>org.apache.cxf.*</package-name>
+        <package-name>org.apache.commons.*</package-name>
+        <package-name>org.springframework.*</package-name>
+        <package-name>org.aopalliance.*</package-name>
+    </prefer-application-packages>
+</weblogic-application>
