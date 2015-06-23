@@ -21,16 +21,20 @@
     </application-param>
 
     <prefer-application-packages>
-        <package-name>javax.faces.*</package-name> 
-        <package-name>com.sun.faces.*</package-name> 
-        <package-name>com.bea.faces.*</package-name> 
-        
         <package-name>antlr.*</package-name>
         <package-name>javax.jws.*</package-name>
+        <package-name>javax.xml.ws.*</package-name>
+        <package-name>com.ctc.wstx.*</package-name>
         <package-name>org.apache.*</package-name>
         <package-name>org.apache.cxf.*</package-name>
         <package-name>org.apache.commons.*</package-name>
         <package-name>org.springframework.*</package-name>
         <package-name>org.aopalliance.*</package-name>
+        
+        <!--
+        <package-name>org.apache.xerces.xni.parser.*</package-name>
+        <package-name>org.apache.xerces.parsers.*</package-name>
+        <package-name>org.apache.xalan.*</package-name>
+        -->
     </prefer-application-packages>
 </weblogic-application>
